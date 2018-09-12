@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="example_pkg",
+    name="csj_converter",
     version="0.0.1",
     author="Semooze",
     author_email="cloudtimewater@gmail.com",
