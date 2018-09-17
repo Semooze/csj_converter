@@ -45,7 +45,7 @@ def convert_dict_to_csj(data: dict, escape_non_ascii: bool=False) -> tuple:
         values = json.dumps(list(data.values()))[1:-1]
     return keys, values
 
-def convert_dict_key_to_csj(data: dict, escape_non_ascii: bool=False) -> tuple:
+def convert_dict_key_to_csj(data: dict, escape_non_ascii: bool=False) -> string:
     """Convert key of dictionary into string."""
     if escape_non_ascii:
         data = json.dumps(list(data.keys()), ensure_ascii=False)[1:-1]
@@ -53,7 +53,7 @@ def convert_dict_key_to_csj(data: dict, escape_non_ascii: bool=False) -> tuple:
         data = json.dumps(list(data.keys()))[1:-1]
     return data
 
-def convert_dict_value_to_csj(data: dict, escape_non_ascii: bool=False) -> tuple:
+def convert_dict_value_to_csj(data: dict, escape_non_ascii: bool=False) -> string:
     """Convert value into string."""
     if escape_non_ascii:
         data = json.dumps(list(data.values()), ensure_ascii=False)[1:-1]
